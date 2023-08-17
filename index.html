@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream Parlor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-bs-theme="dark">
+    <header class="container-fluid text-center d-flex justify-content-center">
+      <h1 class="border border-4 border-warning bg-light text-dark">
+        Ice Cream Parlor
+      </h1>
+    </header>
+
+    <section id="iceCreamSection">
+      <img id="iceCreamImage" src="ice-cream-cone.gif" alt="Ice Cream Cone" />
+    </section>
+
+    <main class="container-fluid">
+      <section class="d-flex justify-content-evenly text-warning">
+        <div class="col-6 glassCard m-3 elevation-5">
+          <div id="cart" class="">cart</div>
+
+          <div class="text-end">
+            <p class="fs-4">SUBTOTAL: $<span id="subtotal">0</span></p>
+            <p class="fs-3">TOTAL: $<span id="total">0</span></p>
+          </div>
+          <div class="text-end pt-2">
+            <button class="btn btn-warning fs-3" onclick="checkOut()">
+              CHECK OUT
+            </button>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div onclick="orderVanilla()" class="col-4">
+              <img
+                class="menu-img elevation-5"
+                src="https://images.unsplash.com/photo-1561230101-2c841778f9ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80"
+                alt="" />
+            </div>
+
+            <div onclick="orderCookieDough()" class="col-4">
+              <img
+                class="menu-img elevation-5"
+                src="https://images.unsplash.com/photo-1630343254119-fa76567aa747?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvb2tpZSUyMGRvdWdofGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+            </div>
+
+            <div onclick="orderStrawberry()" class="col-4">
+              <img
+                class="menu-img elevation-5"
+                src="https://images.unsplash.com/photo-1589999637259-3c7abefd93eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div onclick="orderSprinkles()" class="col-4">
+              <img
+                class="menu-img elevation-5"
+                src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3ByaW5rbGVzfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+            </div>
+
+            <div onclick="orderChocolateChips()" class="col-4">
+              <img
+                class="menu-img elevation-5"
+                src="https://images.unsplash.com/photo-1601850513971-239e8aa2b08e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hvY2xhdGUlMjBjaHVua3N8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+            </div>
+
+            <div onclick="orderCookieChunks()" class="col-4">
+              <img
+                class="menu-img elevation-5"
+                src="https://images.unsplash.com/photo-1597733153203-a54d0fbc47de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29va2llfGVufDB8fDB8fHwy&auto=format&fit=crop&w=500&q=60"
+                alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ice cream flavors -->
+    </main>
+
+    <footer></footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

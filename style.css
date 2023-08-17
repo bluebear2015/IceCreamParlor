@@ -1,0 +1,43 @@
+
+
+.glassCard{
+    /* From https://css.glass */
+background: rgba(124, 141, 136, 0.663);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.3px);
+-webkit-backdrop-filter: blur(6.3px);
+border: 1px solid rgba(53, 50, 50, 0.24);
+}
+
+.elevation-5{
+box-shadow: 2px 2px 5px;
+}
+
+.cart {
+    min-height: 60vh;
+}
+
+.menu-img {
+    border-radius: 14px;
+border: 10px;
+    height: 100%;
+    width: 100%;
+    
+    object-fit:contain;
+    object-position: center;
+}
+
+body{
+    margin: 0;
+}
+
+#iceCreamSection {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#iceCreamImage {
+    width: 100px;
+    transition: width 0.3s ease;
+}
